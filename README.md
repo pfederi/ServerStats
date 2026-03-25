@@ -14,11 +14,11 @@ A native macOS menu bar app for monitoring servers running [Glances](https://nic
 - **Launch at Login** — Built-in toggle via SMAppService
 - **No dependencies** — Pure Swift/SwiftUI, no external packages
 
-## Screenshots
+## Screenshot
 
-| Menu Bar | Dropdown |
-|----------|----------|
-| `DB ▮ 29% \| SRV ▮ 45%` | Card grid with metrics |
+<p align="center">
+  <img src=".github/images/dropdown.png" alt="ServerStats Dropdown" width="360">
+</p>
 
 ## Requirements
 
