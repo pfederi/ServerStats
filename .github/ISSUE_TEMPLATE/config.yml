@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Glances Documentation
+    url: https://glances.readthedocs.io/
+    about: Check the Glances docs for server setup questions
