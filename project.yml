@@ -1,0 +1,47 @@
+name: ServerStats
+options:
+  bundleIdPrefix: com.serverstats
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  minimumXcodeGenVersion: "2.30"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+targets:
+  ServerStats:
+    type: application
+    platform: macOS
+    sources:
+      - ServerStats
+    info:
+      path: ServerStats/Info.plist
+      properties:
+        CFBundleDisplayName: ServerStats
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        LSUIElement: true
+    entitlements:
+      path: ServerStats/ServerStats.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.serverstats.ServerStats
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        PRODUCT_NAME: ServerStats
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_LSUIElement: true
+        CODE_SIGN_ENTITLEMENTS: ServerStats/ServerStats.entitlements
+        ENABLE_APP_SANDBOX: true
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  ServerStatsTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - ServerStatsTests
+    dependencies:
+      - target: ServerStats
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.serverstats.ServerStatsTests
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        GENERATE_INFOPLIST_FILE: true

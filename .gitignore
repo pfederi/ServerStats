@@ -1,0 +1,28 @@
+.superpowers/
+
+## macOS
+.DS_Store
+
+## Xcode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.xcodeproj/
+
+## Swift Package Manager
+.build/
+.swiftpm/
+
+## Logs
+firebase-debug.log
+*.log
+
+## Secrets & certificates
+*.env
+*.p12
+*.cer
+*.pem
+*.mobileprovision
+GoogleService-Info.plist
