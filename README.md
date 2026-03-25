@@ -16,11 +16,10 @@ A native macOS menu bar app for monitoring servers running [Glances](https://nic
 
 ## Screenshots
 
-<p align="center">
-  <img src=".github/images/statusbar.png" alt="ServerStats Menu Bar" width="400">
-  <br><br>
-  <img src=".github/images/dropdown.png" alt="ServerStats Dropdown" width="360">
-</p>
+| Menu Bar | Dropdown |
+|:--------:|:--------:|
+| <img src=".github/images/statusbar.png" alt="Menu Bar" width="300"> | <img src=".github/images/dropdown.png" alt="Dropdown" width="300"> |
+| Colored CPU fill bars with alert badges | Card grid with metrics and progress bars |
 
 ## Requirements
 
